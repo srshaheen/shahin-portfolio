@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pc: #000000;
+  --pcb:#333333;
+  --sc:#ffffff;
+  --bg: #f4f4f6;
+  --orangec: #fc9e4f;
+  --bluec: #00b2ca;
+  
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--pcb);
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* header start */
+.nav-link{
+    color: var(--pc);
+    font-weight: 300;
+}
+
+ul li:first-child a{
+    color: var(--bluec);
+}
+
+.nav-link:hover{
+    color: var(--bluec);
+}
+/* header end */
+/* Hero start */
+.hero button{
+    color: var(--bg);
+    padding: 6px 50px;
+    text-transform: uppercase;
+    background: linear-gradient(to left,var(--bluec), blue);
+
+}
+
+.hero button:hover{
+    background: linear-gradient(to left,blue,var(--bluec));
+}
+/* Hero end */
+/* service start */
+.service a, .about a, .hire a{
+    color: var(--bg);
+    border: 1px solid var(--bg);
+    background-color: var(--orangec);
+    padding: 6px 30px;
+    border-radius: 5px;
+    width: max-content;
+    display: block;
+    margin: auto;
+    transition: all .5s;
+}
+
+.service a:hover, .about a:hover, .hire a:hover{
+    color: #000000;
+    background-color: var(--sc);
+}
+
+.service img{
+    width: 70%;
+    
+    object-fit: cover;    
+    display: block;
+    margin: 0 auto;
+}
+
+.service .card{
+    border-radius: 0;
+}
+
+/* service end */
+/* About start */
+.about a{
+    margin: 0;
+}
+/* About end */
+/* hire start */
+.hire{
+    background: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.hire::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+ 
+}
+
+
+/* hire end */
+
+
+
