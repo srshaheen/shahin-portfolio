@@ -1,0 +1,22 @@
+.service .card {
+  border-bottom-left-radius: 110px;
+  border-top-right-radius: 110px;
+  transition: all 0.7s;
+}
+.service .card::after {
+  display: none;
+}
+
+.service .card:hover {
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 110px;
+  border-top-left-radius: 110px;
+  background: rgb(48, 48, 231);
+}
+
+header {
+  height: 300px;
+  background: url("/images/bg.jpg);
+
+}
