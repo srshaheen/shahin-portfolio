@@ -8,6 +8,7 @@ window.addEventListener('scroll', () =>{
     }
 });
 
+
 //scroll effect
 // function scrolling(){
 //     window.scrollTo(0, 650);
