@@ -145,6 +145,8 @@ ul li:first-child a {
   left: 0;
   transition: height 0.7s;
   z-index: -1;
+  border-bottom-right-radius: 110px;
+  border-top-left-radius: 110px;
 } */
 .service .card:hover {
   border-bottom-left-radius: 20px;
@@ -189,3 +191,89 @@ ul li:first-child a {
 }
 
 /* hire end */
+/* project start */
+#project .web {
+  height: 300px;
+  border: 6px solid tomato;
+  transition: all 0.7s;
+}
+
+#project .web::after {
+  content: "";
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, 0.3);
+}
+
+.web:hover {
+  transform: scale(1.1);
+}
+
+#project .website1 {
+  background: url("./images/w5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+#project .website2 {
+  background: url("./images/w2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+#project .website3 {
+  background: url("./images/w3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+#project .website4 {
+  background: url("./images/w1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+
+#project .website5 {
+  background: url("./images/w4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+
+#project .website6 {
+  background: url("./images/w6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  position: relative;
+}
+
+.preview {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  background: tomato;
+  color: white;
+  transition: all 0.7s;
+}
+.preview:hover {
+  background: red;
+  color: white;
+  border: 1px solid red;
+}
+/* project end */
